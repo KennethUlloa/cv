@@ -1,0 +1,99 @@
+:root {
+    font-size: 20px;
+    --primary-color: #313448;
+    --complementary-color: rgb(234, 234, 234);
+    --backgroud-color: rgb(252, 252, 252);
+}
+
+body {
+    background-color: var(--backgroud-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-complementary {
+    background-color: var(--complementary-color);
+}
+
+.text-primary, .text-primary.all * {
+    color: var(--primary-color)
+}
+
+.text-complementary, .text-complementary.all * {
+    color: var(--complementary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+    color: var(--primary-color)
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    gap: 15px;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+header * {
+    color: var(--complementary-color)
+}
+
+.cv-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 0.5em solid var(--backgroud-color);
+    z-index: 10;
+}
+
+.back {
+    position: absolute;
+    background-color: var(--backgroud-color);
+    min-width: 100%;
+    min-height: 150px;
+    z-index: 0;
+    bottom: 0;
+}
+
+video {
+    background: #000000;
+    border-radius: 10px;
+}
+
+h2 {
+    padding: 25px;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 10px;
+    text-align: start;
+}
+
+td {
+    border-top: 2px solid var(--primary-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
