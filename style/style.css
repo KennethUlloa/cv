@@ -37,6 +37,9 @@ header {
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     gap: 15px;
     align-items: center;
     position: relative;
@@ -46,6 +49,11 @@ header {
 header * {
     color: var(--complementary-color)
 }
+
+footer {
+    background-color: var(--primary-color);
+}
+
 
 .cv-img {
     width: 300px;
@@ -88,6 +96,7 @@ td, th{
 
 td {
     border-top: 2px solid var(--primary-color);
+    vertical-align: text-top;
 }
 
 .text-center {
